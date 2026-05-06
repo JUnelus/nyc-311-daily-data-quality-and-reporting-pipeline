@@ -91,6 +91,13 @@ def update_readme(
     status_icon = "✅ PASS" if not quality_failures else "❌ FAIL"
     run_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
+    failure_summary_lines = ["### Data Quality Summary", ""]
+    if quality_failures:
+        failure_summary_lines.append("Status details:")
+        failure_summary_lines.extend([f"- {item}" for item in quality_failures])
+    else:
+        failure_summary_lines.append("- All data quality checks passed.")
+
     summary_lines = [
         "<!-- PIPELINE-SUMMARY-START -->",
         "",
@@ -98,6 +105,8 @@ def update_readme(
         "",
         f"**Run date:** {run_date}  ",
         f"**Data quality status:** {status_icon}  ",
+        "",
+        *failure_summary_lines,
         "",
         "### Last 7 Days – Volume & Status",
         "",
