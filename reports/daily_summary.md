@@ -1,7 +1,7 @@
 # NYC 311 Daily Summary
 
 **Run date:** 2026-05-06
-**Data quality status:** ✅ PASS
+**Data quality status:** ❌ FAIL
 
 ## Last 7 Days – Volume & Status
 
@@ -16,7 +16,7 @@
 | 2026-04-28 | 10065 | 7336 | 2729 |
 
 ## Data Quality Checks
-- ✅ All checks passed.
+- ❌ No rows returned from incremental API pull.
 
 ## Charts
 

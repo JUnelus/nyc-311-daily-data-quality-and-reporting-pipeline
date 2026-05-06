@@ -127,7 +127,7 @@ The workflow does:
 ## 📊 Latest Pipeline Run
 
 **Run date:** 2026-05-06  
-**Data quality status:** ✅ PASS  
+**Data quality status:** ❌ FAIL  
 
 ### Last 7 Days – Volume & Status
 
