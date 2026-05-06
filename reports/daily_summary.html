@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NYC 311 Daily Summary</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 960px; margin: 40px auto; padding: 0 20px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f4f4f4; }
+    tr:nth-child(even) { background-color: #fafafa; }
+    .pass { color: green; font-weight: bold; }
+    .fail { color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>NYC 311 Daily Summary</h1>
+  <p>Run date: <strong>2026-05-06</strong></p>
+  <p>Data quality status: <span class="fail">❌ FAIL</span></p>
+
+  <h2>Last 7 Days – Volume &amp; Status</h2>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>request_date</th>
+      <th>total_requests</th>
+      <th>closed_requests</th>
+      <th>open_requests</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2026-05-04</td>
+      <td>355</td>
+      <td>112</td>
+      <td>243</td>
+    </tr>
+    <tr>
+      <td>2026-05-03</td>
+      <td>8816</td>
+      <td>5042</td>
+      <td>3774</td>
+    </tr>
+    <tr>
+      <td>2026-05-02</td>
+      <td>9577</td>
+      <td>6540</td>
+      <td>3037</td>
+    </tr>
+    <tr>
+      <td>2026-05-01</td>
+      <td>10514</td>
+      <td>6523</td>
+      <td>3991</td>
+    </tr>
+    <tr>
+      <td>2026-04-30</td>
+      <td>9992</td>
+      <td>6766</td>
+      <td>3226</td>
+    </tr>
+    <tr>
+      <td>2026-04-29</td>
+      <td>10012</td>
+      <td>7165</td>
+      <td>2847</td>
+    </tr>
+    <tr>
+      <td>2026-04-28</td>
+      <td>10065</td>
+      <td>7336</td>
+      <td>2729</td>
+    </tr>
+  </tbody>
+</table>
+
+  <h2>Data Quality Checks</h2>
+  <ul><li>❌ No rows returned from incremental API pull.</li></ul>
+
+  <h2>Charts</h2>
+  <ul><li><a href='charts/top_complaints.html'>Top Complaints</a></li>
+<li><a href='charts/borough_trends.html'>Borough Trends</a></li>
+<li><a href='charts/open_vs_closed.html'>Open Vs Closed</a></li>
+<li><a href='charts/top_agencies.html'>Top Agencies</a></li>
+</ul>
+</body>
+</html>

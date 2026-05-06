@@ -1,0 +1,6 @@
+pandas>=2.2.2,<3.0.0
+requests>=2.32.3,<3.0.0
+plotly>=5.24.1,<6.0.0
+matplotlib>=3.9.2,<4.0.0
+pytest>=8.3.3,<9.0.0
+python-dateutil>=2.9.0.post0,<3.0.0
