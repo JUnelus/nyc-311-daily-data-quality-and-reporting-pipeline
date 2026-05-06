@@ -132,19 +132,19 @@ The workflow does:
 ### Data Quality Summary
 
 Status details:
-- No rows returned from incremental API pull.
+- borough contains unexpected values.
 
 ### Last 7 Days – Volume & Status
 
 | request_date | total_requests | closed_requests | open_requests |
 | --- | --- | --- | --- |
-| 2026-05-04 | 355 | 112 | 243 |
+| 2026-05-05 | 409 | 153 | 256 |
+| 2026-05-04 | 11004 | 5195 | 5809 |
 | 2026-05-03 | 8816 | 5042 | 3774 |
 | 2026-05-02 | 9577 | 6540 | 3037 |
 | 2026-05-01 | 10514 | 6523 | 3991 |
 | 2026-04-30 | 9992 | 6766 | 3226 |
 | 2026-04-29 | 10012 | 7165 | 2847 |
-| 2026-04-28 | 10065 | 7336 | 2729 |
 
 ### Charts
 
