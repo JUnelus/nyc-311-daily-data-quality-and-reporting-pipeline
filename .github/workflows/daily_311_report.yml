@@ -1,6 +1,12 @@
 name: Daily NYC 311 Report
 
 on:
+  push:
+    paths-ignore:
+      - "docs/**"
+      - "**/*.md"
+      - ".idea/**"
+      - "LICENSE"
   schedule:
     - cron: "0 11 * * *"
   workflow_dispatch:
@@ -8,23 +14,33 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: nyc-311-pipeline-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   run-pipeline:
+    if: github.event_name != 'push' || github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: requirements.txt
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python -m pip install -r requirements.txt
 
       - name: Run tests
         run: pytest -q
@@ -41,5 +57,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/raw data/processed reports README.md
-          git diff --cached --quiet || git commit -m "chore: update daily NYC 311 artifacts"
+          git diff --cached --quiet || git commit -m "chore: update daily NYC 311 artifacts [skip ci]"
           git push
