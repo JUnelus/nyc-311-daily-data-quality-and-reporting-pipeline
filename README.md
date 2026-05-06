@@ -132,28 +132,28 @@ The workflow does:
 ### Data Quality Summary
 
 Status details:
-- No rows returned from the incremental API pull.
+- No rows returned from incremental API pull.
 
 ### Last 7 Days – Volume & Status
 
 | request_date | total_requests | closed_requests | open_requests |
-|--------------|----------------|-----------------|---------------|
-| 2026-05-04   | 355            | 112             | 243           |
-| 2026-05-03   | 8816           | 5042            | 3774          |
-| 2026-05-02   | 9577           | 6540            | 3037          |
-| 2026-05-01   | 10514          | 6523            | 3991          |
-| 2026-04-30   | 9992           | 6766            | 3226          |
-| 2026-04-29   | 10012          | 7165            | 2847          |
-| 2026-04-28   | 10065          | 7336            | 2729          |
+| --- | --- | --- | --- |
+| 2026-05-04 | 355 | 112 | 243 |
+| 2026-05-03 | 8816 | 5042 | 3774 |
+| 2026-05-02 | 9577 | 6540 | 3037 |
+| 2026-05-01 | 10514 | 6523 | 3991 |
+| 2026-04-30 | 9992 | 6766 | 3226 |
+| 2026-04-29 | 10012 | 7165 | 2847 |
+| 2026-04-28 | 10065 | 7336 | 2729 |
 
 ### Charts
 
-| Chart                    | Link                                       |
-|--------------------------|--------------------------------------------|
-| Top 10 Complaint Types   | [view](reports/charts/top_complaints.html) |
-| Borough Trends (7 days)  | [view](reports/charts/borough_trends.html) |
+| Chart | Link |
+| --- | --- |
+| Top 10 Complaint Types | [view](reports/charts/top_complaints.html) |
+| Borough Trends (7 days) | [view](reports/charts/borough_trends.html) |
 | Open vs Closed Over Time | [view](reports/charts/open_vs_closed.html) |
-| Top Agencies             | [view](reports/charts/top_agencies.html)   |
+| Top Agencies | [view](reports/charts/top_agencies.html) |
 
 ### Chart Screenshots
 
@@ -167,7 +167,7 @@ Status details:
 
 ![Borough Trends (7 days)](reports/charts/borough_trends.png)
 
-#### Open vs. Closed Over Time
+#### Open vs Closed Over Time
 [Interactive chart](reports/charts/open_vs_closed.html)
 
 ![Open vs Closed Over Time](reports/charts/open_vs_closed.png)
