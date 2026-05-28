@@ -1,19 +1,19 @@
 # NYC 311 Daily Summary
 
-**Run date:** 2026-05-27
+**Run date:** 2026-05-28
 **Data quality status:** ❌ FAIL
 
 ## Last 7 Days – Volume & Status
 
 | request_date | total_requests | closed_requests | open_requests |
 | --- | --- | --- | --- |
-| 2026-05-26 | 579 | 270 | 309 |
+| 2026-05-27 | 456 | 177 | 279 |
+| 2026-05-26 | 12298 | 5812 | 6486 |
 | 2026-05-25 | 9949 | 5469 | 4480 |
 | 2026-05-24 | 8212 | 5319 | 2893 |
 | 2026-05-23 | 7748 | 4887 | 2861 |
 | 2026-05-22 | 10310 | 5028 | 5282 |
 | 2026-05-21 | 11659 | 5018 | 6641 |
-| 2026-05-20 | 12502 | 5054 | 7448 |
 
 ## Data Quality Checks
 - ❌ borough contains unexpected values.
