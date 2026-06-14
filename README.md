@@ -126,13 +126,13 @@ The workflow does:
 
 ## 📊 Latest Pipeline Run
 
-**Run date:** 2026-06-13  
+**Run date:** 2026-06-14  
 **Data quality status:** ❌ FAIL  
 
 ### Data Quality Summary
 
 Status details:
-- borough contains unexpected values.
+- No rows returned from incremental API pull.
 
 ### Last 7 Days – Volume & Status
 
