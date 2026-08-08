@@ -126,7 +126,7 @@ The workflow does:
 
 ## 📊 Latest Pipeline Run
 
-**Run date:** 2026-08-07  
+**Run date:** 2026-08-08  
 **Data quality status:** ❌ FAIL  
 
 ### Data Quality Summary
@@ -138,8 +138,8 @@ Status details:
 
 | request_date | total_requests | closed_requests | open_requests |
 | --- | --- | --- | --- |
-| 2026-08-06 | 298 | 98 | 200 |
-| 2026-08-05 | 9582 | 3803 | 5779 |
+| 2026-08-07 | 565 | 282 | 283 |
+| 2026-08-06 | 9780 | 4529 | 5251 |
 
 ### Charts
 
