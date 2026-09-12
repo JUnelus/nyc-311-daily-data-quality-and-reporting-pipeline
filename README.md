@@ -126,7 +126,7 @@ The workflow does:
 
 ## 📊 Latest Pipeline Run
 
-**Run date:** 2026-09-11  
+**Run date:** 2026-09-12  
 **Data quality status:** ❌ FAIL  
 
 ### Data Quality Summary
