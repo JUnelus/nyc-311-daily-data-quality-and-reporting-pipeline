@@ -126,20 +126,17 @@ The workflow does:
 
 ## 📊 Latest Pipeline Run
 
-**Run date:** 2026-10-15  
+**Run date:** 2026-10-16  
 **Data quality status:** ❌ FAIL  
 
 ### Data Quality Summary
 
 Status details:
-- borough contains unexpected values.
+- No rows returned from incremental API pull.
 
 ### Last 7 Days – Volume & Status
 
-| request_date | total_requests | closed_requests | open_requests |
-| --- | --- | --- | --- |
-| 2026-10-14 | 338 | 128 | 210 |
-| 2026-10-13 | 10808 | 4926 | 5882 |
+_No metrics available yet._
 
 ### Charts
 
