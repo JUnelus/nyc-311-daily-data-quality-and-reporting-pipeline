@@ -1,6 +1,6 @@
 # NYC 311 Daily Summary
 
-**Run date:** 2026-11-03
+**Run date:** 2026-11-04
 **Data quality status:** ❌ FAIL
 
 ## Last 7 Days – Volume & Status
